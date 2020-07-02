@@ -1,0 +1,148 @@
+/* Conatiner styling */
+
+.container-fluid {
+    padding: 0% 5% 0% 5%;
+    margin: 10% auto;
+}
+
+.section {
+    margin: 10% auto;
+}
+
+p {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title-text {
+    font-size: 4rem;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.subtitle-text {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    /* dis */
+}
+
+.regular-text {
+    font-size: 1.2rem;
+    color: gray;
+    text-align: left;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: gray;
+}
+
+.btn-main {
+    border-radius: 25px;
+    margin: 0 5px;
+    padding: 10px 50px;
+}
+
+.mg-top-2 {
+    margin-top: 2rem;
+}
+
+
+/* Analyse  */
+
+.check-icon {
+    color: green;
+    margin-right: 10px;
+}
+
+.pad-col {
+    padding-left: 5%
+}
+
+
+/* Feature */
+
+#features .subtitle-text {
+    text-align: center;
+}
+
+#features .regular-text {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.feature-card {
+    padding: 15% 5%;
+    margin-top: 50px;
+}
+
+.feature-text {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    /* font-size: 1rem; */
+    margin-bottom: 2rem;
+    color: blue;
+}
+
+.btn-card {
+    color: black;
+    /* font-weight: ; */
+}
+
+
+/* Benifits */
+
+#benifits .container-fluid {
+    background: rgb(39, 26, 255);
+    background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.benifit-image {
+    width: 110%;
+}
+
+.white {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* #benifits .small-text {
+    color: cornsilk;
+} */
+
+#benifits .pad-col {
+    padding: 5% 5%;
+}
+
+.benifit-card {
+    background-color: transparent;
+    /* color: #fff; */
+    margin-top: 0;
+    text-align: left;
+}
+
+.benifit-icon {
+    background: darkgray;
+    color: white;
+    margin-bottom: 10%;
+    padding: 10%;
+    border-radius: 100%;
+    opacity: 15%;
+}
