@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
-
-
+/* @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
 body {
     width: 100%;
     height: 100%;
@@ -11,13 +9,15 @@ html {
     height: 100%;
 }
 
-* ===== NAVIGATION ======*/
+
+ ===== NAVIGATION ======
+
 .navbar {
     border: 0;
     z-index: 9999;
     letter-spacing: 4px;
-
 }
+
 .logo {
     display: block;
     height: auto;
@@ -27,12 +27,13 @@ html {
 }
 
 .navbar-brand>img {
-  height: 100%;
-  padding: 15px; /* firefox bug fix */
-  width: auto;
+    height: 100%;
+    padding: 15px;
+    width: auto;
 }
-.navbar .nav > li > a {
-  line-height: 50px;
+
+.navbar .nav>li>a {
+    line-height: 50px;
 }
 
 .navbar-header h1 {
@@ -41,7 +42,8 @@ html {
     font-family: 'Lobster Two', cursive;
 }
 
-.navbar li a, .navbar {
+.navbar li a,
+.navbar {
     color: black !important;
     font-size: 12px;
     transition: all 0.6s 0s;
@@ -52,7 +54,11 @@ html {
     border: 0;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
     color: red !important;
-}
+} */
 
+.navbar {
+    background-color: black;
+}
