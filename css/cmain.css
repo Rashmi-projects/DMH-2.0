@@ -150,7 +150,8 @@
   }
   
   .container-contact1 {
-    width: 1163px;
+    width: 500px;
+    
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -164,7 +165,7 @@
     justify-content: space-between;
     align-items: center;
   
-    padding: 90px 130px 88px 148px;
+    padding: 90px 130px 58px 98px;
   }
   
   /*------------------------------------------------------------------
@@ -436,3 +437,17 @@
       opacity: 1;
     }
   }
+
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
