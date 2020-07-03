@@ -5,6 +5,12 @@
     margin: 10% auto;
 }
 
+.container-post {
+  padding: 0% 5% 0% 5%;
+  margin: 10% auto;
+  min-height: 450rem;
+}
+
 .container_l{
     padding: 0% 5% 0% 5%;
     margin: 10% auto;
@@ -30,6 +36,7 @@ h6 {
     font-family: 'Montserrat', sans-serif;
    
 }
+
 
 .title-text {
     font-size: 4rem;
@@ -194,6 +201,7 @@ h6 {
 
 
 
+
 .benifit-image {
     width: 110%;
 }
@@ -308,15 +316,15 @@ body, html {
   }
   
   .bg-img {
-    background-image: url(http://themebubble.com/demo/webify/medical/wp-content/uploads/sites/6/2019/03/hero-bg.jpg);
+   
     
-    /* control height of img */
-    min-height: 450px;
-    
-    /* center and scale img */
+    background: rgb(39, 26, 255);
+    background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    min-height: 550px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
   
   /* add style to container */
