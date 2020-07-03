@@ -37,10 +37,37 @@ h6 {
     /* dis */
 }
 
+.counter-text {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    /* dis */
+}
+
+.form-text {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
+    text-align: center;
+    /* dis */
+}
 .regular-text {
     font-size: 1.2rem;
     color: gray;
     text-align: left;
+}
+.cregular-text {
+    font-size: 1.2rem;
+    color: gray;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.fregular-text {
+    font-size: 1.2rem;
+    color: gray;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
 }
 
 .small-text {
@@ -57,6 +84,17 @@ h6 {
 .mg-top-2 {
     margin-top: 2rem;
 }
+.mg-c-2 {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.mg-f-2 {
+    margin-top: 1rem;
+    margin-left: 12rem;
+    border-radius: 5rem;
+  }
 
 
 /* Analyse  */
@@ -146,3 +184,144 @@ h6 {
     border-radius: 100%;
     opacity: 15%;
 }
+
+
+/* Carousel */
+
+body {
+    padding-top: 20px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+/* carosel end */
+
+
+/* Counter Starts */
+
+#shiva
+{
+  width: 100px;
+	height: 100px;
+	background: lightblue;
+	float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+
+/* counter end */
+
+
+/* image form */
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    background-image: url(../resource/1.jpg);
+    
+    /* control height of img */
+    min-height: 450px;
+    
+    /* center and scale img */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* add style to container */
+  .container_1 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+    
+  }
+  .container_2{
+    position: absolute;
+    left: 0;
+    margin-top: 10rem;
+  
+     }
+  
+  
+  /* input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* style for submit btn */
+  .btn-new{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+/* image form end */
