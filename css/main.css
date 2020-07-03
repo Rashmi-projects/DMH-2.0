@@ -5,6 +5,12 @@
     margin: 10% auto;
 }
 
+.container_l{
+    padding: 0% 5% 0% 5%;
+    margin: 10% auto;
+    max-height: 2rem;
+}
+
 .section {
     margin: 10% auto;
 }
@@ -22,6 +28,7 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+   
 }
 
 .title-text {
@@ -42,6 +49,13 @@ h6 {
     margin-bottom: 0.5rem;
     /* dis */
 }
+
+.last-text {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    /* dis */
+}
+
 
 .form-text {
     font-size: 2.5rem;
@@ -90,9 +104,15 @@ h6 {
 
 }
 
+.mg-l-2 {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
+}
+
 .mg-f-2 {
     margin-top: 1rem;
-    margin-left: 12rem;
+    margin-left: 20rem;
     border-radius: 5rem;
   }
 
@@ -112,6 +132,10 @@ h6 {
 /* Feature */
 
 #features .subtitle-text {
+    text-align: center;
+}
+
+#testimonials .subtitle-text {
     text-align: center;
 }
 
@@ -148,6 +172,11 @@ h6 {
 /* Benifits */
 
 #benifits .container-fluid {
+    background: rgb(39, 26, 255);
+    background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+#analyse .container-fluid {
     background: rgb(39, 26, 255);
     background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
@@ -266,7 +295,7 @@ body, html {
   }
   
   .bg-img {
-    background-image: url(../resource/1.jpg);
+    background-image: url(http://themebubble.com/demo/webify/medical/wp-content/uploads/sites/6/2019/03/hero-bg.jpg);
     
     /* control height of img */
     min-height: 450px;
@@ -282,7 +311,8 @@ body, html {
     position: absolute;
     right: 0;
     margin: 20px;
-    max-width: 300px;
+    max-width: auto;
+    max-height: auto;
     padding: 16px;
     background-color: white;
     
@@ -311,7 +341,7 @@ body, html {
   
   /* style for submit btn */
   .btn-new{
-    background-color: #4caf50;
+   background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: white;
     padding: 16px 20px;
     border: none;
