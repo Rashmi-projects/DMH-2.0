@@ -134,6 +134,9 @@ h6 {
 #features .subtitle-text {
     text-align: center;
 }
+#posts .subtitle-text {
+  text-align: center;
+}
 
 #testimonials .subtitle-text {
     text-align: center;
@@ -141,6 +144,9 @@ h6 {
 
 #features .regular-text {
     text-align: center;
+}
+#posts .regular-text {
+  text-align: center;
 }
 
 .center {
@@ -180,6 +186,13 @@ h6 {
     background: rgb(39, 26, 255);
     background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
+
+#posts .container-fluid {
+  background: rgb(39, 26, 255);
+  background: linear-gradient(90deg, rgba(39, 26, 255, 1) 0%, rgba(42, 42, 224, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
 
 .benifit-image {
     width: 110%;
