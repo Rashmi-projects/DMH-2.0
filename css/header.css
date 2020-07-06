@@ -87,3 +87,7 @@ html {
     font-weight: 300;
     font-size: 1.2rem;
 }
+
+a{
+    text-decoration-color: white;
+}
