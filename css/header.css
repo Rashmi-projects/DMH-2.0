@@ -88,6 +88,10 @@ html {
     font-size: 1.2rem;
 }
 
-a{
-    text-decoration-color: white;
+.btn{
+    background-color: #004aad;
+    color: #fff;
+    border-radius: 20px;
+    margin: 0 5px;
+    padding: 10px 50px;
 }
