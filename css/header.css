@@ -60,5 +60,30 @@ html {
 } */
 
 .navbar {
-    background-color: black;
+    padding: 1rem 5% 1rem;
+    width: 100%;
+    border: solid grey;
+    border-width: 0 0 1px;
+}
+
+.navbar:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    color: black;
+    /* font-weight: bold; */
+}
+
+.nav-item {
+    padding: 0px 18px;
+    color: black;
+}
+
+.nav-link {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.2rem;
 }
