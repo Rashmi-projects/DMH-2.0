@@ -42,7 +42,9 @@ p {
     background: linear-gradient(90deg, rgba(56, 182, 255, 1) 0%, rgba(71, 141, 255, 1) 55%, rgba(82, 113, 255, 1) 100%);
 }
 
+.card{
 
+    margin-bottom: 2rem;
 }
 h1,
 h2,
