@@ -3,7 +3,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #e6f6ff;
+    /* background-color: #e6f6ff; */
 }
 
 .container-fluid {
@@ -21,6 +21,9 @@ body {
     padding: 0% 5% 0% 5%;
     margin: 10% auto;
     min-height: 450rem;
+}
+.section_padd{
+    padding: 1% 0;
 }
 
 .section {
@@ -46,6 +49,8 @@ p {
 
     margin-bottom: 2rem;
 }
+
+
 h1,
 h2,
 h3,
@@ -156,9 +161,11 @@ h6 {
 }
 
 /* Benifits */
-#benifits {
-    padding-top: 5px;
+.padding_top {
+    padding: 5% 5%;
+
 }
+
 #benifits .pad-col {
     bottom: 100px;
 }

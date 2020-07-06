@@ -4,13 +4,13 @@
 
 
 .new_footer_top {
-    padding: 120px 0px 270px;
+    padding: 120px 0px 30px;
     position: relative;
       overflow-x: hidden;
 }
 .new_footer_area .footer_bottom {
     padding-top: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .footer_bottom {
     font-size: 14px;
@@ -30,10 +30,7 @@
     border-width: 1px;
     margin-top: 20px;
 }
-.btn_get_two:hover {
-    background: transparent;
-    color: #5e2ced;
-}
+
 .btn_get:hover {
     color: #fff;
     background: #009dee;
@@ -122,6 +119,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .new_footer_top .f-title {
     margin-bottom: 30px;
     color: #263b5e;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* .f_600 {
     font-weight: 600;
@@ -131,6 +129,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 } */
 h1, h2, h3, h4, h5, h6 {
     color: #4b505e;
+    font-size: 1.5rem;
 }
 .new_footer_top .f_widget.about-widget .f_list li a {
     color: #6a7695;
@@ -205,6 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 .social_icons{
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
 }
 /*************footer End*****************/
 
