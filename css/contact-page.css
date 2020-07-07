@@ -35,12 +35,12 @@
       padding: 0px; 
       box-sizing: border-box;
   }
-  
+/*   
   body, html {
       height: 100%;
       font-family: Montserrat-Regular, sans-serif;
   }
-  
+   */
   /*---------------------------------------------*/
   a {
       font-family: Montserrat-Regular;
@@ -60,7 +60,7 @@
   
   a:hover {
       text-decoration: none;
-      color: #57b846;
+      color: #004aad;
   }
   
   /*---------------------------------------------*/
@@ -133,11 +133,11 @@
     min-height: 100%;
     padding: 15px;
   
-    background: #009bff;
+    /* background: #009bff;
     background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
     background: -o-linear-gradient(left, #0072ff, #00c6ff);
     background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-    background: linear-gradient(left, #0072ff, #00c6ff);
+    background: linear-gradient(left, #0072ff, #00c6ff); */
   
     display: -webkit-box;
     display: -webkit-flex;
@@ -150,8 +150,6 @@
   }
   
   .container-contact1 {
-    width: 500px;
-    
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -165,36 +163,38 @@
     justify-content: space-between;
     align-items: center;
   
-    padding: 90px 130px 58px 98px;
+   
   }
   
   /*------------------------------------------------------------------
   [  ]*/
   .contact1-pic {
-    width: 296px;
+    width: 10rem;
   }
   
   .contact1-pic img {
-    max-width: 100%;
+    max-width: 20%;
   }
   
   
   /*------------------------------------------------------------------
   [  ]*/
   .contact1-form {
-    width: 390px;
-  }
+    width: 290px;
+   
+   }
+   .border:hover {
   
-  .contact1-form-title {
-    display: block;
-    font-family: Montserrat-ExtraBold;
-    font-size: 24px;
-    color: #333333;
-    line-height: 1.2;
-    text-align: center;
-    padding-bottom: 44px;
-  }
+    background-color: #a0b7d4;
+}
+
+   .address-card {
+    padding: 5% 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
   
+ 
   input.input1 {
     height: 50px;
     border-radius: 25px;
@@ -279,7 +279,7 @@
     min-width: 193px;
     height: 50px;
     border-radius: 25px;
-    background: #57b846;
+    background: #004aad;
     font-family: Montserrat-Bold;
     font-size: 15px;
     line-height: 1.5;
@@ -451,3 +451,8 @@
     width:100%;
     position:absolute;
     }
+
+    .center_align{
+      display: flex;
+      justify-content: center;
+      }

@@ -25,6 +25,9 @@ body {
 .section_padd{
     padding: 1% 0;
 }
+.padding_bottom{
+padding-bottom: 10rem;
+}
 
 .section {
     margin: 10% auto;
