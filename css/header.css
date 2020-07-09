@@ -95,3 +95,7 @@ html {
     margin: 0 5px;
     padding: 10px 50px;
 }
+
+.dropdown-text{
+    font-family: 'Montserrat', sans-serif;
+}

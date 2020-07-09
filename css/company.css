@@ -4,10 +4,10 @@
   }
   .carousel-inner1{
     height: 100px;
+
   }
   .carousel-caption{
-    color: blue;
-    top: 50%;
+   top: 50%;
   }
 
   .underline-text {
@@ -15,6 +15,9 @@
     color: gray;
     margin-top:-30px;
     /* text-align: left; */
+}
+.text_color{
+  color: rgb(56, 182, 255);
 }
 
 @media (min-width: 768px) {
