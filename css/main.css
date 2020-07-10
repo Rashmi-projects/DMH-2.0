@@ -69,7 +69,7 @@ h6 {
 }
 .subtitle-text {
     font-size: 2.5rem;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 2rem;
     /* dis */
 }
@@ -195,13 +195,14 @@ h6 {
     .carousel-inner .active + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
-        display: block;
+        display: none;
     }
     
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item
+     {
         transition: none;
     }
     
@@ -211,15 +212,7 @@ h6 {
       transform: translate3d(0, 0, 0);
     }
     
-    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    
+
     /* left or forward direction */
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
@@ -255,17 +248,6 @@ h6 {
     }
   
   }
-  
-  /* Bootstrap Lightbox using Modal */
-  
-  #profile-grid { overflow: auto; white-space: normal; } 
-  #profile-grid .profile { padding-bottom: 40px; }
-  #profile-grid .panel { padding: 0 }
-  #profile-grid .panel-body { padding: 15px }
-  #profile-grid .profile-name { font-weight: bold; }
-  #profile-grid .thumbnail {margin-bottom:6px;}
-  #profile-grid .panel-thumbnail { overflow: hidden; }
-  #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
 
 /* carosel end */
 
@@ -316,6 +298,7 @@ input[type=password]:focus {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    border-radius: 25px;
 }
 
 .btn_mobile{

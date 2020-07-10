@@ -64,10 +64,13 @@ html {
     width: 100%;
     border: solid grey;
     border-width: 0 0 1px;
-}
+   }
+   .bg-light{
+    background-color: #fff;
+   }
 
 .navbar:hover {
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px #004aad;
 }
 
 .navbar-brand {
@@ -79,7 +82,7 @@ html {
 
 .nav-item {
     padding: 0px 18px;
-    color: black;
+    color: #004aad;
 }
 
 .nav-link {
@@ -94,6 +97,7 @@ html {
     border-radius: 20px;
     margin: 0 5px;
     padding: 10px 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .dropdown-text{
