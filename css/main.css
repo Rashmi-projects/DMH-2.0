@@ -194,65 +194,71 @@ h6 {
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item,
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
-        display: none;
-    }
-    
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item
-     {
-        transition: none;
-    }
-    
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-    
-
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item{
         display: block;
-        visibility: visible;
     }
     
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+  }
   
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
   }
 
+}
 /* carosel end */
 
 /* Counter Starts */
-#counter_box{
+/* #counter_box{
     width: 100px;
     height: 100px;
     background: lightblue;
@@ -265,7 +271,7 @@ h6 {
     margin-left: 30px;
     font-size: 25px;
     text-align: center;
-}
+} */
 
 /* Form section */
 .form {
@@ -303,7 +309,7 @@ input[type=password]:focus {
 
 .btn_mobile{
     margin-left: 15rem;
-    margin-top:5rem;
+    margin-top:3rem;
 }
 @media screen and (max-width: 600px) {
     #counter_box {
@@ -316,3 +322,35 @@ input[type=password]:focus {
         margin-top: 1rem;
     }
   }
+
+/* test counter starts */
+.counter {
+    background-color:#f5f5f5;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+/* test counter End */
+  

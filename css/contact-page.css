@@ -2,28 +2,27 @@
     overflow:hidden;
     padding-bottom:10%;
     position:relative;
-    height:0;
-    border-radius: 5px;
-    }
-    .map-container iframe{
-    height:100%;
-    width:100%;
-    position: absolute;;
-    }
+ }
 
+    iframe{
+      border-radius: 25px;
+      width:100%;
+    }
     .center_align{
       display: flex;
       justify-content: center;
       }
 
-      .contact-icon {
+     .contact-icon {
         margin-right: 10px;
     }
 
     .btn_box{
       border-radius: 20px;
+    
       margin: 0 5px;
       padding: 10px 50px;
+      
   }
   .button_width{
     width: 25rem;
@@ -31,4 +30,13 @@
 
   .button_margin{
     margin-top: 6rem;
+  }
+
+  @media screen and (max-width: 600px) {
+   .button_width{
+     width:13rem;
+   }
+   iframe{
+     width:100%;
+   }
   }

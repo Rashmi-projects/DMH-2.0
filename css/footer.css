@@ -4,7 +4,7 @@
 
 
 .new_footer_top {
-    padding: 120px 0px 30px;
+    padding: 30px 0px 30px;
     position: relative;
       overflow-x: hidden;
 }
@@ -15,20 +15,16 @@
 .footer_bottom {
     font-size: 14px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 10px;
     color: #7f88a6;
     padding: 27px 0px;
 }
 .new_footer_top .company_widget p {
     font-size: 16px;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 20px;
     color: #6a7695;
-    margin-bottom: 20px;
-}
-.new_footer_top .company_widget .f_subscribe_two .btn_get {
-    border-width: 1px;
-    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .btn_get:hover {
@@ -49,7 +45,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #009dee;
 }
 .new_footer_top .f_widget.about-widget .f_list li {
-    margin-bottom: 11px;
+    margin-bottom: 5px;
 }
 .f_widget.about-widget .f_list li:last-child {
     margin-bottom: 0px;
@@ -203,5 +199,13 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     justify-content: center;
     padding-top: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    h5{
+     padding-top: 20px; 
+    }
+  
+   }
+ 
 /*************footer End*****************/
 
