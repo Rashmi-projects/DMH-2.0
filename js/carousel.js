@@ -1,4 +1,3 @@
-   
 
 $('#carouselExample').on('slide.bs.carousel', function (e) {
 
@@ -22,12 +21,11 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
   }
   });
   
-  
-  $('#carouselExample').carousel({ 
+ $('#carouselExample').carousel({ 
               interval: 2000
       });
   
-  });
+
 
 
 

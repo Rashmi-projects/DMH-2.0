@@ -6,3 +6,8 @@ $(function() {
 $(function() {
     $('#footer').load('footer.html');
 });
+
+
+$(function() {
+    $('#Carosel').load('carousel.html');
+});
