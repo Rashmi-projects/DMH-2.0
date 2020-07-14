@@ -92,6 +92,9 @@
   .company_img{
     width:19rem;
   }
+  .carousel-caption{
+    top:-40px;
+  }
   }
 
 

@@ -19,17 +19,18 @@
 
     .btn_box{
       border-radius: 20px;
-    
       margin: 0 5px;
       padding: 10px 50px;
       
   }
+  
   .button_width{
     width: 25rem;
   }
 
   .button_margin{
     margin-top: 6rem;
+    margin-left: 130px;
   }
 
   @media screen and (max-width: 600px) {
@@ -38,5 +39,9 @@
    }
    iframe{
      width:100%;
+   }
+   .button_margin{
+     margin-top:2rem;
+     margin-left:11px;
    }
   }
