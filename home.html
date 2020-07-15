@@ -10,18 +10,16 @@
     <script src="https://kit.fontawesome.com/0d4b93a642.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/global.js"></script>
     <script src="js/carousel.js"></script>
- 
-       
- 
-</head>
+ </head>
 
 <body>
     <section id="header">
@@ -346,7 +344,7 @@
                 <h2 class="subtitle-text">Ready to revolutionize your website?</h2>
             </div>
             <div class="col-lg-6">
-                <button class="btn btn-dark btn-main btn_mobile" type="button">Learn More</button>
+                <button class="btn-main btn-primary btn_mobile" type="button">Learn More</button>
             </div>
           </div>
     </section>
@@ -423,12 +421,13 @@
         $.fn.countTo.defaults = {
             from: 0,               // the number the element should start at
             to: 0,                 // the number the element should end at
-            speed: 1,           // how long it should take to count between the target numbers
-            refreshInterval: 100,  // how often the element should be updated
+            speed: 1000,           // how long it should take to count between the target numbers
+            refreshInterval: 1,  // how often the element should be updated
             decimals: 0,           // the number of decimal places to show
             formatter: formatter,  // handler for formatting the value before rendering
             onUpdate: null,        // callback method for every time the element is updated
-            onComplete: null       // callback method for when the element finishes updating
+            onComplete: null,      // callback method for when the element finishes updating
+           
         };
         
         function formatter(value, settings) {
