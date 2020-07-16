@@ -227,6 +227,12 @@ input[type=password]:focus {
         margin-left: 2rem;
         margin-top: 1rem;
     }
+    .btn_margin{
+        margin-top: 1rem;
+    }
+    .margin_bottom{
+        margin-bottom: 1rem;
+    }
   }
 
 /* test counter starts */
