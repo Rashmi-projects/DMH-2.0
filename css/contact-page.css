@@ -33,7 +33,7 @@
     margin-left: 130px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
    .button_width{
      width:13rem;
    }
@@ -44,4 +44,7 @@
      margin-top:2rem;
      margin-left:11px;
    }
+   body {
+    text-align:center;
+}
   }

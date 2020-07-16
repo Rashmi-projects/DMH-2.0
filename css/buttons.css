@@ -141,3 +141,10 @@
      margin-left: 15rem;
      margin-top: 3rem;
    }
+
+   @media (max-width:768px) {
+     svg{
+      position:absolute;
+      width :20px;
+     }
+   }
