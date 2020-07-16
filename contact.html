@@ -15,12 +15,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 	  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	  crossorigin="anonymous"></script>
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/contact-page.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/buttons.css">
 	<script src="js/global.js"></script>
 	<script src="js/carousel.js"></script>
 </head>
@@ -36,7 +36,31 @@
 				<div class="form-group">
 					<input type="email" class="btn-light btn_box button_width" placeholder="Enter your email">
 					  </div>
-				  <button type="submit" class="btn btn-primary center_align">Confirm identity</button>
+					  <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
 				  </form>
 			</div>
 </section>
@@ -50,7 +74,31 @@
             </div>
             <div class="col-lg-6">
 				<div class="center_align button_margin">
-                <button type="button" class="btn btn-primary">Download Now</button></div>
+					<div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
             </div>
 			</div>
 			</div>

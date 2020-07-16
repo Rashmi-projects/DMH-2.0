@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/0d4b93a642.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <script src="js/global.js"></script>
     <script src="js/carousel.js"></script>
- </head>
+</head>
 
 <body>
     <section id="header">
@@ -31,9 +38,59 @@
                 <div class="col-lg-6">
                     <h1 class="title-text">Create your</h1>
                     <h1 class="title-text">Beautiful <span id="title-movable">Website</span></h1>
-                    <p class="regular-text">All-in-one WordPress theme that’s design-driven, super customizable, & blazing fast. Webify loads only the elements used in a page, integrating custom cache system.</p>
-                    <button class="btn btn-lg btn-main mg-top-2" type="button">get webify now</button>
-                    <button class="btn btn-lg btn-main mg-top-2" type="button">browse demo</button>
+                    <p class="regular-text">All-in-one WordPress theme that’s design-driven, super customizable, &
+                        blazing fast. Webify loads only the elements used in a page, integrating custom cache system.
+                    </p>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <img id="mountain-img" src="resource/title-img.png" alt="mountain-img">
@@ -46,14 +103,65 @@
             <div class="row">
                 <div class="col-lg-6 pad-col">
                     <h2 class="subtitle-text white">We analyze your business from every direction.</h2>
-                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, & start selling
+                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, &
+                        start selling
                     </p>
-                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, & start selling
+                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, &
+                        start selling
                     </p>
-                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, & start selling
+                    <p class="small-text"><i class="fas fa-check check-icon"></i> Pick any demo, install WooCommerce, &
+                        start selling
                     </p>
-                    <button class="btn btn-dark btn-main mg-top-2" type="button">get webify now</button>
-                    <button class="btn btn-outline-dark btn-main mg-top-2" type="button">browse demo</button>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <img id="analyse-img" class="img" src="resource/SDASDASD.png" alt="analysis">
@@ -131,7 +239,8 @@
             <div class="row ">
                 <div class="col-lg-8 ">
                     <h2 class="subtitle-text white">Get everything organized. Build to scale your product.</h2>
-                    <p class="small-text white"> Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the digital divide.</p>
+                    <p class="small-text white"> Capitalize on low hanging fruit to identify a ballpark value added
+                        activity to beta test override the digital divide.</p>
                     <div class="row ">
                         <div class="col-lg-4 col-benifit">
                             <div class="card center benifit-card">
@@ -180,14 +289,14 @@
             </div>
         </div>
     </section>
-   
-  <section class="section">
+
+    <section class="section">
         <div class="container-fluid center">
-          <h2 class="subtitle-text">Our Clients</h2>
-             <div id="Carosel"></div>
-            </div>
-            </section>
-  
+            <h2 class="subtitle-text">Our Clients</h2>
+            <div id="Carosel"></div>
+        </div>
+    </section>
+
 
     <section id="posts" class="center gradient-bg section_padd">
         <div class="container-fluid">
@@ -234,49 +343,73 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
-                   <h2 class="subtitle-text">Wellness Builds Upon the Medical</h2>
+                    <h2 class="subtitle-text">Wellness Builds Upon the Medical</h2>
                     <p class="regular-text">Doesn’t matter what niche you’re after – Webify has it all.</p>
-                    <button class="btn btn-dark btn-main" type="button">get webify now</button>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="position:absolute">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="counter">
-                                 <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
-                                 <p class="count-text ">Our Customer</p>
-                              </div>
+                                <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+                                <p class="count-text ">Our Customer</p>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="counter">
-                                 <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+                                <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
                                 <p class="count-text ">Happy Clients</p>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="counter">
-                             <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                                <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
                                 <p class="count-text ">Projects completed</p>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="counter">
-                             <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+                                <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
                                 <p class="count-text ">Coffee</p>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="counter">
-                             <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+                                <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
                                 <p class="count-text ">Happy Clients</p>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="counter">
-                             <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
-                                 <p class="count-text ">Our Customer</p>
-                              </div>
+                                <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+                                <p class="count-text ">Our Customer</p>
+                            </div>
                         </div>
                     </div>
 
@@ -293,7 +426,31 @@
                 <div class="col-lg-8 white center">
                     <h2 class="subtitle-text">Wellness Builds Upon the Medical</h2>
                     <p class="regular-text white">Doesn’t matter what niche you’re after – Webify has it all.</p>
-                    <button class="btn btn-dark btn-main mg-top-2" type="button">get webify now</button>
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            Blob Button
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="form">
@@ -306,21 +463,21 @@
                             </div>
                             <div class="form-group">
                                 <select class="form-control" id="sel1">
-                         <option>Select</option> 
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                        </select>
+                                    <option>Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <select class="form-control" id="sel1">
-                          <option>Select</option> 
-                           <option>1</option>
-                           <option>2</option>
-                           <option>3</option>
-                           <option>4</option>
-                         </select>
+                                    <option>Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
                             </div>
 
                             <div class="form-group">
@@ -338,86 +495,110 @@
         </div>
     </section>
     <section id="last">
-    <div class="container p-3 my-3">
+        <div class="container p-3 my-3">
             <div class="row">
-            <div class="col-lg-6">
-                <h2 class="subtitle-text">Ready to revolutionize your website?</h2>
+                <div class="col-lg-6">
+                    <h2 class="subtitle-text">Ready to revolutionize your website?</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="btn_mobile">
+                        <button class="blob-btn">
+                            Learn More
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                    <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <br />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <button class="btn-main btn-primary btn_mobile" type="button">Learn More</button>
-            </div>
-          </div>
     </section>
-    
+
     <section id="footer"></section>
-    
+
 </body>
 <script type="text/javascript">
     (function ($) {
         $.fn.countTo = function (options) {
             options = options || {};
-            
+
             return $(this).each(function () {
                 // set options for current element
                 var settings = $.extend({}, $.fn.countTo.defaults, {
-                    from:            $(this).data('from'),
-                    to:              $(this).data('to'),
-                    speed:           $(this).data('speed'),
+                    from: $(this).data('from'),
+                    to: $(this).data('to'),
+                    speed: $(this).data('speed'),
                     refreshInterval: $(this).data('refresh-interval'),
-                    decimals:        $(this).data('decimals')
+                    decimals: $(this).data('decimals')
                 }, options);
-                
+
                 // how many times to update the value, and how much to increment the value on each update
                 var loops = Math.ceil(settings.speed / settings.refreshInterval),
                     increment = (settings.to - settings.from) / loops;
-                
+
                 // references & variables that will change with each update
                 var self = this,
                     $self = $(this),
                     loopCount = 0,
                     value = settings.from,
                     data = $self.data('countTo') || {};
-                
+
                 $self.data('countTo', data);
-                
+
                 // if an existing interval can be found, clear it first
                 if (data.interval) {
                     clearInterval(data.interval);
                 }
                 data.interval = setInterval(updateTimer, settings.refreshInterval);
-                
+
                 // initialize the element with the starting value
                 render(value);
-                
+
                 function updateTimer() {
                     value += increment;
                     loopCount++;
-                    
+
                     render(value);
-                    
-                    if (typeof(settings.onUpdate) == 'function') {
+
+                    if (typeof (settings.onUpdate) == 'function') {
                         settings.onUpdate.call(self, value);
                     }
-                    
+
                     if (loopCount >= loops) {
                         // remove the interval
                         $self.removeData('countTo');
                         clearInterval(data.interval);
                         value = settings.to;
-                        
-                        if (typeof(settings.onComplete) == 'function') {
+
+                        if (typeof (settings.onComplete) == 'function') {
                             settings.onComplete.call(self, value);
                         }
                     }
                 }
-                
+
                 function render(value) {
                     var formattedValue = settings.formatter.call(self, value, settings);
                     $self.html(formattedValue);
                 }
             });
         };
-        
+
         $.fn.countTo.defaults = {
             from: 0,               // the number the element should start at
             to: 0,                 // the number the element should end at
@@ -427,30 +608,30 @@
             formatter: formatter,  // handler for formatting the value before rendering
             onUpdate: null,        // callback method for every time the element is updated
             onComplete: null,      // callback method for when the element finishes updating
-           
+
         };
-        
+
         function formatter(value, settings) {
             return value.toFixed(settings.decimals);
         }
     }(jQuery));
-    
+
     jQuery(function ($) {
-      // custom formatting example
-      $('.count-number').data('countToOptions', {
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
         }
-      });
-      
-      // start all the timers
-      $('.timer').each(count);  
-      
-      function count(options) {
-        var $this = $(this);
-        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-        $this.countTo(options);
-      }
     });
 
 </script>

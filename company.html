@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/contact-page.css">
   <link rel="stylesheet" href="css/company.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/buttons.css">
   <script src="js/global.js"></script>
   <script src="js/carousel.js"></script>
 
@@ -35,7 +36,31 @@
       <h2 class="subtitle-text white">PROPELLING TOWARDS TOMORROW</h2>
       <p class="regular-text white p-2">Our mission is to help businesses and brands grow by providing innovative and
         efficient integrated brand marketing through insights, ideas and technologies.</p>
-      <button type="submit" class="btn btn-primary center_align">Download Our Agency</button>
+        <div class="buttons">
+          <button class="blob-btn">
+              Download Agency
+              <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                  </span>
+              </span>
+          </button>
+          <br />
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                  <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix"
+                          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+              </defs>
+          </svg>
+      </div>
 
     </div>
   </section>
@@ -170,7 +195,31 @@
         <div class="form-group">
           <input type="email" class="btn-white btn_box button_width" placeholder="Enter your email">
         </div>
-        <button type="submit" class="btn btn-primary center_align">Confirm identity</button>
+        <div class="buttons">
+          <button class="blob-btn">
+              Confirm Identity
+              <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                  </span>
+              </span>
+          </button>
+          <br />
+
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                  <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix"
+                          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                  </filter>
+              </defs>
+          </svg>
+      </div>
       </form>
     </div>
   </section>

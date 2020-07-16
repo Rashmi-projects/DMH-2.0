@@ -72,7 +72,7 @@ html {
 }
 
 .navbar-brand{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: black;
 }
@@ -83,7 +83,7 @@ html {
 }
 
 .nav-link {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
 }
