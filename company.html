@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -37,7 +37,7 @@
       <p class="regular-text white p-2">Our mission is to help businesses and brands grow by providing innovative and
         efficient integrated brand marketing through insights, ideas and technologies.</p>
         <div class="buttons">
-          <button class="blob-btn">
+          <button class="blob-btn"  id="btnOpenForm">
               Download Agency
               <span class="blob-btn__inner">
                   <span class="blob-btn__blobs">
@@ -48,7 +48,33 @@
                   </span>
               </span>
           </button>
-          <br />
+           <div class="form-popup-bg">
+      <div class="form-container">
+        <button id="btnCloseForm" class="close-button">X</button>
+        <h1>Confirm to proceed</h1>
+        <p>For more information. Please complete this form.</p>
+        <form action="/case_study.html">
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <label for="">Company Name</label>
+            <input class="form-control" type="text"/>
+          </div>
+          <div class="form-group">
+            <label for="">E-Mail Address</label>
+            <input class="form-control" type="text"/>
+          </div>
+          <div class="form-group">
+            <label for="">Phone Number</label>
+            <input class="form-control" type="text"/>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <br/>
 
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
               <defs>
@@ -229,6 +255,35 @@
   <section id="footer">
 
   </section>
+
 </body>
+
+<script type="text/javascript">
+function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#btnOpenForm').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+  
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  
+  
+  
+  });
+
+</script>
 
 </html>

@@ -14,8 +14,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
-       
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/blogs.css">
         <script src="js/global.js"></script>
         <script src="js/carousel.js"></script>
        
@@ -46,11 +46,20 @@
           <div class="card-body">
             <h2 class="card-title">Post Title</h2>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-          </div>
-          <div class="card-footer text-muted">
+            <div id="sociallocker" class="btn btn-primary">&rarr;
+            <div id="sociallocker-links">
+		          <a href="#" class="social-1 gp"><i class="fab fa-google"></i></a>
+              <a href="#" class="social-1 in"><i class="fab fa-linkedin-in"></i></a>
+            
+            </div>
+            <div id="sociallocker-content">
+              <a href="http://google.com">Read More</a>
+            </div>
+            <div id="sociallocker-overlay"><i class="fas fa-lock"></i>Unlock content with a Business Id</div>
+          </div></div>
+         <div class="card-footer text-muted">
             Posted on January 1, 2020 by
-            <a href="#">Start Bootstrap</a>
+            <a href="#">Digital Media Hub</a>
           </div>
         </div>
 
@@ -168,5 +177,31 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+<script type="text/javascript">
+  (function() {
+    var sl = document.querySelector("#sociallocker");
+    var slc = document.querySelector("#sociallocker-content");
+    if (!sl) return;
+    var old_slc_html = slc.innerHTML;
+    slc.innerHTML = slc.innerHTML.replace(/(href=")(.*)(\")/g, "href=\"#\"");
+    sl.querySelectorAll("#sociallocker-links a").forEach(function(ele) {
+      ele.onclick = function(e) {
+        var web_window = window.open(this.href, 'Share Link', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600,top=' + (screen.height/2 - 300) + ',left=' + (screen.width/2 - 300));
+        var check_window_close = setInterval(function() { 
+          if (web_window.closed) {
+            clearInterval(check_window_close);
+            slc.innerHTML = old_slc_html;
+            document.querySelector("#sociallocker-links").style.display = "none";
+            document.querySelector("#sociallocker-overlay").style.display = "none"; 
+            document.querySelector("#sociallocker-content").style.top = "0";
+          }
+        }, 1000);
+        e.preventDefault();
+      };
+    });
+  })();
+  
+  </script>
 
 </html>

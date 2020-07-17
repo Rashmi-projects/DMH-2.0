@@ -148,3 +148,15 @@
       width :20px;
      }
    }
+
+
+   .case-card {
+    padding: 15% 5%;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 30rem;
+}
+
+.cases{
+  margin-top: -20rem;
+}
