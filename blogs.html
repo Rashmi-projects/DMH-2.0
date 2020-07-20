@@ -36,7 +36,7 @@
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
-        <h1 class="my-4">Page Heading
+        <h1>Page Heading
           <small>Secondary Text</small>
         </h1>
 
@@ -46,17 +46,26 @@
           <div class="card-body">
             <h2 class="card-title">Post Title</h2>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-            <div id="sociallocker" class="btn btn-primary">&rarr;
-            <div id="sociallocker-links">
-		          <a href="http://gmail.com" class="social-1 gp"><i class="fab fa-google"></i></a>
-              <a href="#" class="social-1 in"><i class="fab fa-linkedin-in"></i></a>
-            
-            </div>
-            <div id="sociallocker-content">
-              <a href="http://google.com">Read More</a>
-            </div>
-            <div id="sociallocker-overlay"><i class="fas fa-lock"></i>Unlock content with a Business Id</div>
-          </div></div>
+            <button class="btn btn-primary"  id="btnOpenForm">Read More &rarr;</button>
+              <div class="form-popup-bg">
+                <div class="form-container">
+                  <button id="btnCloseForm" class="close-button">X</button>
+                  <p>For more information. Please complete this form.</p>
+                  <form action="">
+                    <div class="form-group">
+                      <label for="">Name</label>
+                      <input type="text" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                      <label for="">E-Mail</label>
+                      <input class="form-control" type="email" required/>
+                    </div>
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+          
+        </div>
          <div class="card-footer text-muted">
             Posted on January 1, 2020 by
             <a href="#">Digital Media Hub</a>
@@ -179,29 +188,32 @@
 </body>
 
 <script type="text/javascript">
-  (function() {
-    var sl = document.querySelector("#sociallocker");
-    var slc = document.querySelector("#sociallocker-content");
-    if (!sl) return;
-    var old_slc_html = slc.innerHTML;
-    slc.innerHTML = slc.innerHTML.replace(/(href=")(.*)(\")/g, "href=\"#\"");
-    sl.querySelectorAll("#sociallocker-links a").forEach(function(ele) {
-      ele.onclick = function(e) {
-        var web_window = window.open(this.href, 'Share Link', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600,top=' + (screen.height/2 - 300) + ',left=' + (screen.width/2 - 300));
-        var check_window_close = setInterval(function() { 
-          if (web_window.closed) {
-            clearInterval(check_window_close);
-            slc.innerHTML = old_slc_html;
-            document.querySelector("#sociallocker-links").style.display = "none";
-            document.querySelector("#sociallocker-overlay").style.display = "none"; 
-            document.querySelector("#sociallocker-content").style.top = "0";
-          }
-        }, 1000);
-        e.preventDefault();
-      };
+  function closeForm() {
+    $('.form-popup-bg').removeClass('is-visible');
+  }
+  
+  $(document).ready(function($) {
+    
+    /* Contact Form Interactions */
+    $('#btnOpenForm').on('click', function(event) {
+      event.preventDefault();
+  
+      $('.form-popup-bg').addClass('is-visible');
     });
-  })();
+    
+      //close popup when clicking x or off popup
+    $('.form-popup-bg').on('click', function(event) {
+      if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+        event.preventDefault();
+        $(this).removeClass('is-visible');
+      }
+    });
+    
+    
+    
+    });
   
   </script>
+  
 
 </html>

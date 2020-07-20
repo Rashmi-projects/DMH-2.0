@@ -114,7 +114,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(94, 110, 141, 0.9);
+    background-color: rgba(56, 182, 255, 0.1);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -131,18 +131,18 @@
     transition: opacity 0.3s 0s, visibility 0s 0s;
   }
   .form-container {
-      background-color: #2d3638;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      background-color: #009dee;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px  rgba(56, 182, 255, 0.6), 0 6px 6px  rgba(56, 182, 255, 0.6);
       display: flex;
       flex-direction: column;
-      width: 100%;
-      max-width: 700px;
+      width: 50rem;
+      max-width: 40rem;
       margin-left: auto;
       margin-right: auto;
       position:relative;
-    padding: 40px;
-    color: #fff;
+       padding: 40px;
+      color: #fff;
   }
   .close-button {
     background:none;
@@ -152,7 +152,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border: solid 1px #fff;
+    border: none;
   }
   
   .form-popup-bg:before{

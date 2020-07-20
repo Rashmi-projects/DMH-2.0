@@ -147,7 +147,7 @@
       position:absolute;
       width :20px;
      }
-   }
+     }
 
 
    .case-card {
@@ -159,4 +159,10 @@
 
 .cases{
   margin-top: -20rem;
+}
+
+@media (max-width:768px){
+  .cases{
+    margin-top: -9rem;
+  }
 }
