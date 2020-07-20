@@ -64,13 +64,13 @@
           </div>
           <div class="form-group">
             <label for="">E-Mail</label>
-            <input class="form-control" type="email" required/>
+            <input class="form-control" type="email" name="email" pattern="[a-z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)[a-z0-9.-]+\.[a-z]{2,3}$" required/>
           </div>
           <div class="form-group">
             <label for="">Phone Number</label>
             <input class="form-control" type="text" required/>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
@@ -116,13 +116,10 @@
     <div class="container-fluid center ">
       <h2 class="subtitle-text white">Awards & Recognitions</h2>
       <p class="regular-text white">We strive to align like-minded, purpose-driven individuals who believe in and
-        consistently demonstrate leadership, creativity, analytics and strong communication.</p>
-        <div id="Carosel"></div>
-    </div>
+       consistently demonstrate leadership, creativity, analytics and strong communication.</p>
+        <div id="Carosel"></div></div>
   </section>
-
-
-
+  
   <section id="formi" class="section-lg-pad ">
     <div class="container-fluid">
       <div class="row">
@@ -280,9 +277,13 @@ $(document).ready(function($) {
     }
   });
   
-  
-  
   });
+
+  function myFunction() {
+  var x = document.getElementById("myEmail").pattern;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
 </script>
 
