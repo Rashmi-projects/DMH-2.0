@@ -77,30 +77,42 @@
             <div class="col-lg-6">
 				<div class="center_align button_margin">
 					<div class="buttons">
-                        <button class="blob-btn">
-                            Blob Button
-                            <span class="blob-btn__inner">
-                                <span class="blob-btn__blobs">
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                </span>
-                            </span>
-                        </button>
-                        <br />
-
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                            <defs>
-                                <filter id="goo">
-                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                    <feColorMatrix in="blur" mode="matrix"
-                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                </filter>
-                            </defs>
-                        </svg>
-                    </div>
+						<button class="blob-btn" id="btnOpenForm">
+							Download Agency
+							<span class="blob-btn__inner">
+								<span class="blob-btn__blobs">
+									<span class="blob-btn__blob"></span>
+									<span class="blob-btn__blob"></span>
+									<span class="blob-btn__blob"></span>
+									<span class="blob-btn__blob"></span>
+								</span>
+							</span>
+						</button>
+						 <div class="form-popup-bg">
+					<div class="form-container">
+					  <button id="btnCloseForm" class="close-button">X</button>
+					  <h1>Confirm to proceed</h1>
+					  <p>For more information. Please complete this form.</p>
+					  <form action="https://drive.google.com/file/d/1JhsDaWgNRE9EMD3wMO5HZosalxL8pQaN/view">
+						<div class="form-group">
+						  <label for="">Name</label>
+						  <input type="text" class="form-control" required/>
+						</div>
+						<div class="form-group">
+						  <label for="">Company Name</label>
+						  <input class="form-control" type="text" required/>
+						</div>
+						<div class="form-group">
+						  <label for="">E-Mail</label>
+						  <input class="form-control" type="email" name="email" pattern="[a-z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+						</div>
+						<div class="form-group">
+						  <label for="">Phone Number</label>
+						  <input class="form-control" type="text" required/>
+						</div>
+						<button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
+					  </form>
+					</div>
             </div>
 			</div>
 			</div>
@@ -164,4 +176,33 @@
 	<section id="footer"></section>
 
 </body>
+<script type="text/javascript">
+	function closeForm() {
+	  $('.form-popup-bg').removeClass('is-visible');
+	}
+	
+	$(document).ready(function($) {
+	  
+	  /* Contact Form Interactions */
+	  $('#btnOpenForm').on('click', function(event) {
+		event.preventDefault();
+	
+		$('.form-popup-bg').addClass('is-visible');
+	  });
+	  
+		//close popup when clicking x or off popup
+	  $('.form-popup-bg').on('click', function(event) {
+		if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+		  event.preventDefault();
+		  $(this).removeClass('is-visible');
+		}
+	  });
+	  
+	  });
+	
+	  function myFunction() {
+	  var x = document.getElementById("myEmail").pattern;
+	  document.getElementById("demo").innerHTML = x;
+	}
+	</script>
 </html>
