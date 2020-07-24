@@ -90,30 +90,26 @@
 						</button>
 						 <div class="form-popup-bg">
 					<div class="form-container">
-					  <button id="btnCloseForm" class="close-button">X</button>
-					  <h1>Confirm to proceed</h1>
-					  <p>For more information. Please complete this form.</p>
-					  <form action="https://drive.google.com/file/d/1JhsDaWgNRE9EMD3wMO5HZosalxL8pQaN/view">
-						<div class="form-group">
-						  <label for="">Name</label>
-						  <input type="text" class="form-control" required/>
-						</div>
-						<div class="form-group">
-						  <label for="">Company Name</label>
-						  <input class="form-control" type="text" required/>
-						</div>
-						<div class="form-group">
-						  <label for="">E-Mail</label>
-						  <input class="form-control" type="email" name="email" pattern="[a-z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)[a-z0-9.-]+\.[a-z]{2,3}$" required/>
-						</div>
-						<div class="form-group">
-						  <label for="">Phone Number</label>
-						  <input class="form-control" type="text" required/>
-						</div>
-						<button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
-					  </form>
+					  <button id="btnCloseForm" class="close-button">X</button>    
+				   <h1>Confirm to proceed</h1>
+				 <p>For more information. Please complete this form.</p>
+				 <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+				   <div class="form-group">
+					 <input type="text" placeholder="Your Name" class="input_border" name="name" required/>
+				   </div>
+				   <div class="form-group">
+					  <input class="input_border" placeholder="Company Name" type="text" name="cname" required/>
+				   </div>
+				   <div class="form-group">
+					 <input class="input_border" placeholder="Your E-mail"  type="text" name="email" pattern="[a-z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+				   </div>
+				   <div class="form-group">
+				   <input class="input_border" placeholder="Your Phone No." type="text" name="numb" required/>
+				   </div>
+				   <button class="btn btn-primary" onclick="submit_form()">Submit</button>
+				 </form>
 					</div>
-            </div>
+				  </div>
 			</div>
 			</div>
           </div>
