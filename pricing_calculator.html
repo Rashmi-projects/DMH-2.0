@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ROI Calculator</title>
+    <title>pricing Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu:wght@400;500&display=swap"
@@ -46,11 +46,6 @@
     </section>
     <scetion>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="resource/ddd.jpg">
-                </div>
-                <div class="col-lg-6">
                     <div class="range-slider">
                         <label>Number of Pages</label>
                         <input class="range-slider__range" type="range" value="100" min="0" max="500">
@@ -67,12 +62,10 @@
                         <span class="range-slider__value">400</span>
                     </div>
                     <div class="range-slider">
-                        <input class="range-slider__range" type="range" min="0" max="500">
+                        <input class="range-slider__range" type="range" id="bb" min="0" max="500">
                         <span class="range-slider__value">Basic</span>
                     </div>
-                    <button class="btn btn-primary">Calculate price</button>
-                </div>
-            </div>
+                    <button id="submit-quote" class="btn btn-primary">Calculate price</button> 
             </section>
 
             <section id="footer"></section>
@@ -106,7 +99,7 @@
                 slider.querySelector('span').innerHTML = "Advance";
             }
             if (event.target.value >= 334 && event.target.value <= 500) {
-                slider.querySelector('span').innerHTML = "Premium";
+                slider.querySelector('span').innerHTML = "Full Developement";
             }
             // 2. apply our fill to the input
             applyFill(event.target);

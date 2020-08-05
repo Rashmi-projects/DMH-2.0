@@ -146,8 +146,12 @@ fieldset {
 
 @media screen and (max-width: 768px) {
     .card-block {
-        padding: 20px 20px 0px 20px;
-        height: 250px
+        padding: 20px 20px 20px 20px;
+        margin-right: 4rem;
+        margin-bottom: 2rem; 
+    }
+    input{
+      padding-left: 40rem;
     }
 }
 
@@ -219,5 +223,14 @@ button {
 input{
     width:250px;
     border-radius: 25px;
-   margin-left: 3rem;
+    margin-left: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    input{
+      width:15rem;
+      margin-left: 20px;
+      margin-bottom: 1rem;
+    }
 }
