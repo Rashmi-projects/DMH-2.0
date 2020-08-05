@@ -2,7 +2,7 @@ body {
     color: #000;
     overflow-x: hidden;
     height: 100%; 
-    background: linear-gradient(-45deg, #2196F3 50%, #EEEEEE 50%);
+    /* background: linear-gradient(-45deg, #2196F3 50%, #EEEEEE 50%); */
     background-repeat: no-repeat
 }
 
@@ -41,7 +41,7 @@ body {
     width: 25%;
     float: left;
     position: relative;
-    font-weight: 400
+    font-weight: 400;
 }
 
 #progressbar .step0:before {
@@ -49,11 +49,11 @@ body {
 }
 
 #progressbar li:before {
-    width: 40px;
+    width: 30px;
     height: 40px;
-    line-height: 45px;
+    line-height: 5px;
     display: block;
-    font-size: 20px;
+    font-size: 10px;
     background: #E0E0E0;
     border-radius: 50%;
     margin: auto;
@@ -141,7 +141,7 @@ fieldset {
     border-radius: 25px;
     margin: 0.5%;
     padding: 15px 25px 15px 25px;
-    margin-left: 5rem;
+    margin-left: 6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -214,4 +214,10 @@ button {
 .fa-long-arrow-left {
     float: left;
     margin-top: 4px
+}
+
+input{
+    width:250px;
+    border-radius: 25px;
+   margin-left: 3rem;
 }
