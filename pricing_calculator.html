@@ -118,7 +118,55 @@
         slider.style.background = bg;
     }
 
+    const jobDropdown = document.querySelector(".job-dropdown");
+const pagesDropdown = document.querySelector(".pages-dropdown");
+const budgetDropdown = document.querySelector(".budget-dropdown");
+const timeframeDropdown = document.querySelector(".timeframe-dropdown");
 
+
+const price = document.querySelector(".price");
+const submitQuote = document.getElementById("submit-quote");
+
+submitQuote.addEventListener('click', function(){
+  
+  //Hourly Rate x Estimated time of 4 hours per page
+  if (pagesDropdown.options[pagesDropdown.selectedIndex].text == "1") {
+    answer = 30 * 5;
+  } else if (pagesDropdown.options[pagesDropdown.selectedIndex].text == "2-5") {
+    answer = 30 * 15;
+  } else if (pagesDropdown.options[pagesDropdown.selectedIndex].text == "6-9") {
+    answer = 30 * 30;
+  } else {
+    answer = 30 * 50;
+  }
+  
+  //Multiply depending on type of work
+  if (jobDropdown.options[jobDropdown.selectedIndex].text == "Design") {
+    answer = answer * 1.5;
+  } else if (jobDropdown.options[jobDropdown.selectedIndex].text == "Development") {
+    answer = answer * 2;
+  } else if (jobDropdown.options[jobDropdown.selectedIndex].text == "Design and Development") {
+    answer = answer * 3;
+  } else 
+    answer = answer;
+  
+  //Multiply price depending on timeframe
+  if (timeframeDropdown.options[timeframeDropdown.selectedIndex].text == "1 Week") {
+    answer = answer * 3;
+  } else if (timeframeDropdown.options[timeframeDropdown.selectedIndex].text == "2-5 Weeks") {
+    answer = answer * 2;
+  } else {
+    answer = answer;
+  }
+  
+  //If budget is lower than price, take £50 off
+   if (budgetDropdown.options[budgetDropdown.selectedIndex].value < answer) {
+    answer = answer - 50;
+  }
+  
+  price.innerHTML = "£" + answer;
+  
+});
 
 </script>
 
