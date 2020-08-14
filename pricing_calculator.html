@@ -46,26 +46,45 @@
     </section>
     <scetion>
         <div class="container-fluid">
+          <div class="range-slider">
+            <label>Number of Pages</label>
+            <input class="range-slider__range" type="range" id="pagesslider" min="0" max="500">
+            <span id="pagesSpanId" class="range-slider__value">250</span>
+        </div>
                     <div class="range-slider">
-                        <label>Number of Pages</label>
-                        <input class="range-slider__range" type="range" value="100" min="0" max="500">
-                        <span class="range-slider__value">100</span>
+                      <label>Style of Design</label>
+                        <input class="range-slider__range" type="range" id="websiteTypeRangeSlider" min="0" max="1000">
+                        <span id="typespanId" class="range-slider__value">No Design Needed</span>
                     </div>
 
                     <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="250" min="0" max="500" step="50">
-                        <span class="range-slider__value">250</span>
+                      <label>Copywriting of pages</label>
+                        <input class="range-slider__range" type="range" id="copywriteRangeSlider" min="0" max="500">
+                        <span id="copyId" class="range-slider__value">None</span>
+                    </div>
+                    <div class="range-slider">
+                      <label>SEO W/ PLACEMENT GUARANTEE</label>
+                        <input class="range-slider__range" type="range" id="seoRangeSlider" min="0" max="500">
+                        <span id="seoSpanId" class="range-slider__value">None</span>
                     </div>
 
                     <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="400" min="0" max="500">
-                        <span class="range-slider__value">400</span>
+                      <label>Data Integration</label>
+                        <input class="range-slider__range" type="range" id="dbIntegrationRangeSlider" min="0" max="500">
+                        <span id="dbSpanId" class="range-slider__value">None</span>
                     </div>
                     <div class="range-slider">
-                        <input class="range-slider__range" type="range" id="bb" min="0" max="500">
-                        <span class="range-slider__value">Basic</span>
+                      <label>E-commerce Functionality</label>
+                        <input class="range-slider__range" type="range" id="planRangeSlider" min="0" max="500">
+                        <span id="planSpanId" class="range-slider__value">None</span>
                     </div>
-                    <button id="submit-quote" class="btn btn-primary">Calculate price</button> 
+                    <div class="range-slider">
+                      <label>CMS</label>
+                        <input class="range-slider__range" type="range" id="cmsRangeSlider" min="0" max="500">
+                        <span id="cmsSpanId" class="range-slider__value">Basic</span>
+                    </div>
+                    
+                   <input type="button" value="Generate a table." onclick="generate_table()">
             </section>
 
             <section id="footer"></section>
@@ -82,31 +101,126 @@
     }
 
     // First find all our sliders
-    const sliders = document.querySelectorAll('.range-slider');
+    // const sliders = document.querySelectorAll('.range-slider');
 
     // Iterate through that list of sliders
     // ... this call goes through our array of sliders [slider1,slider2,slider3] and inserts them one-by-one into the code block below with the variable name (slider). We can then access each of wthem by calling slider
-    Array.prototype.forEach.call(sliders, (slider) => {
+    // Array.prototype.forEach.call(sliders, (slider) => {
         // Look inside our slider for our input add an event listener
         //   ... the input inside addEventListener() is looking for the input action, we could change it to something like change
-        slider.querySelector('input').addEventListener('input', (event) => {
+        document.querySelector('#websiteTypeRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            // console.log(`websitetypeRange ${event.target.value}`);
+            // if (event.target.value >= 0 && event.target.value <= 166) {
+            //     slider.querySelector('span').innerHTML = "Basic";
+            // }
+            // else if (event.target.value >= 167 && event.target.value <= 333) {
+            //     slider.querySelector('span').innerHTML = "Advance";
+            // }
+            // if (event.target.value >= 334 && event.target.value <= 500) {
+            //     slider.querySelector('span').innerHTML = "Full Developement";
+            // }
+            // 2. apply our fill to the input
+            // applyFill(event.target);
+        });
+      
+        document.querySelector('#websiteTypeRangeSlider').addEventListener('input', (event) => {
             // 1. apply our value to the span
             console.log(event.target.value);
             if (event.target.value >= 0 && event.target.value <= 166) {
-                slider.querySelector('span').innerHTML = "Basic";
+                document.querySelector('#typespanId').innerHTML = "Simple yet attractive";
             }
             else if (event.target.value >= 167 && event.target.value <= 333) {
-                slider.querySelector('span').innerHTML = "Advance";
+                slider.querySelector('#typespanId').innerHTML = "Moderately Stylized";
             }
             if (event.target.value >= 334 && event.target.value <= 500) {
-                slider.querySelector('span').innerHTML = "Full Developement";
+                slider.querySelector('#typespanId').innerHTML = "High End";
+            }
+            if (event.target.value >= 500 && event.target.value <= 1000) {
+                slider.querySelector('#typespanId').innerHTML = "World Class";
+            }
+            // 2. apply our fill to the input
+            applyFill(event.target);
+        });
+        document.querySelector('#dbIntegrationRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            console.log(event.target.value);
+            if (event.target.value >= 0 && event.target.value <= 166) {
+                slider.querySelector('#dbSpanId').innerHTML = "Basic";
+            }
+            else if (event.target.value >= 167 && event.target.value <= 333) {
+                slider.querySelector('#dbSpanId').innerHTML = "Advance";
+            }
+            if (event.target.value >= 334 && event.target.value <= 500) {
+                slider.querySelector('#dbSpanId').innerHTML = "Full Developement";
+            }
+            // 2. apply our fill to the input
+            applyFill(event.target);
+        });
+      document.querySelector('#planRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            console.log(event.target.value);
+            if (event.target.value >= 0 && event.target.value <= 166) {
+              document.querySelector('#planSpanId').innerHTML = "Basic";
+            }
+            else if (event.target.value >= 167 && event.target.value <= 333) {
+              document.querySelector('#planSpanId').innerHTML = "Advance";
+            }
+            if (event.target.value >= 334 && event.target.value <= 500) {
+                slider.querySelector('#planSpanId').innerHTML = "Full Developement";
+            }
+            // 2. apply our fill to the input
+            applyFill(event.target);
+        });
+        document.querySelector('#cmsRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            console.log(event.target.value);
+            if (event.target.value >= 0 && event.target.value <= 166) {
+              document.querySelector('#cmsSpanId').innerHTML = "Standard";
+            }
+            else if (event.target.value >= 167 && event.target.value <= 333) {
+              document.querySelector('#cmsSpanId').innerHTML = "Advance";
+            }
+            if (event.target.value >= 334 && event.target.value <= 500) {
+                slider.querySelector('#cmsSpanId').innerHTML = "Full Developement";
+            }
+            // 2. apply our fill to the input
+            applyFill(event.target);
+        });
+      
+        document.querySelector('#copywriteRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            console.log(event.target.value);
+            if (event.target.value >= 0 && event.target.value <= 166) {
+              document.querySelector('#copyId').innerHTML = "5-10";
+            }
+            else if (event.target.value >= 167 && event.target.value <= 333) {
+              document.querySelector('#copyId').innerHTML = "10-25";
+            }
+            if (event.target.value >= 334 && event.target.value <= 500) {
+                slider.querySelector('#copyId').innerHTML = "25-50";
+            }
+            // 2. apply our fill to the input
+            applyFill(event.target);
+        });
+        document.querySelector('#seoRangeSlider').addEventListener('input', (event) => {
+            // 1. apply our value to the span
+            console.log(event.target.value);
+            if (event.target.value >= 0 && event.target.value <= 166) {
+                slider.querySelector('#seoSpanId').innerHTML = "30 Keyword";
+            }
+            else if (event.target.value >= 167 && event.target.value <= 333) {
+                slider.querySelector('#seoSpanId').innerHTML = "80 Keywords";
+            }
+            if (event.target.value >= 334 && event.target.value <= 500) {
+                slider.querySelector('#seoSpanId').innerHTML = "150 Keywords";
             }
             // 2. apply our fill to the input
             applyFill(event.target);
         });
         // Don't wait for the listener, apply it now!
-        applyFill(slider.querySelector('input'));
-    });
+        // applyFill(slider.querySelector('input'));
+    // });
 
     // This function applies the fill to our sliders by using a linear gradient background
     function applyFill(slider) {
