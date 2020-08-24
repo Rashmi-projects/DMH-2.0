@@ -32,11 +32,11 @@
     <section id="header">
 
     </section>
-    <section>
+    <section class="section-lg-pad gradient-bg">
     <div class="container-fluid">
            <div class="row">
        <div class="col-lg-6">
-           <h3 style="text-align: center;">A Solution of every Need</h3>
+           <h3 style="text-align: center; margin-top:85px;">A Solution of every Need</h3>
      </div>
      <div class="col-lg-6">
         <table class="table table-striped">
@@ -68,17 +68,16 @@
                 <td>@twitter</td>
               </tr>
             </tbody>
-          </table>
-          
+          </table>    
      </div>
         </div>
        </div>    
     </section>
-    <section>
-        <div class="container-fluid">
+    <section class="section-lg-pad ">
+        <div class="container-fluid ">
             <div class="row">
         <div class="col-lg-6">
-
+         <h3>We analyze your business from every direction.</h3>
         </div>
         <div class="col-lg-6">
             <div class="range">
@@ -91,13 +90,75 @@
                 <li>4 days</li>
                 <li>5 days</li>
                 <li>6 days</li>
-                <li>7 days</li>
-              </ul>
+                <li>7 days</li>  
+             </ul>
         </div>
         </div>
         </div>
     </section>
-   
+    <section class="gradient-bg section-lg-pad center">
+        <div class="container-fluid">
+          <h3>Heading</h3>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card center feature-card">
+                <div class="card-body">
+                    <i class="fas fa-laptop fa-lg feature-icon"></i>
+                    <div class="card-title">
+                        <h6>Customer Experience</h6>
+                    </div>
+                    <div class="card-text feature-text">
+                        One of the world’s leading software design systems for everyone.
+                    </div>
+                    <a class="btn-card" href="#">Learn more</a>
+                </div>
+            </div>
+            </div>
+          <div class="col-lg-3">
+            <div class="card center feature-card">
+              <div class="card-body">
+                  <i class="fas fa-laptop fa-lg feature-icon"></i>
+                  <div class="card-title">
+                      <h6>Customer Experience</h6>
+                  </div>
+                  <div class="card-text feature-text">
+                      One of the world’s leading software design systems for everyone.
+                  </div>
+                  <a class="btn-card" href="#">Learn more</a>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card center feature-card">
+              <div class="card-body">
+                  <i class="fas fa-laptop fa-lg feature-icon"></i>
+                  <div class="card-title">
+                      <h6>Customer Experience</h6>
+                  </div>
+                  <div class="card-text feature-text">
+                      One of the world’s leading software design systems for everyone.
+                  </div>
+                  <a class="btn-card" href="#">Learn more</a>
+              </div>
+          </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card center feature-card">
+              <div class="card-body">
+                  <i class="fas fa-laptop fa-lg feature-icon"></i>
+                  <div class="card-title">
+                      <h6>Customer Experience</h6>
+                  </div>
+                  <div class="card-text feature-text">
+                      One of the world’s leading software design systems for everyone.
+                  </div>
+                  <a class="btn-card" href="#">Learn more</a>
+              </div>
+          </div>
+          </div>
+          </div>
+        </div>
+  </section>
    <section id="footer"></section>
     </body>
     <script type="text/javascript">
@@ -134,11 +195,13 @@ $rangeInput.on('input', function () {
 });
 
 // Change input value on label click
-$('.range-labels li').on('click', function () {
+$('.range-lab labels').on('click', function () {
   var index = $(this).index();
   
   $rangeInput.val(index + 1).trigger('input');
   
 });
+// document.getElementById('range-input').innerHTML = total;
+// document.getElementById('range-lab').innerHTML = total;
     </script>
     </html>
